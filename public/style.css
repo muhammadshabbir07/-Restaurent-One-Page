@@ -1,0 +1,269 @@
+
+    @import url('https://fonts.googleapis.com/css2?family=Miniver&display=swap');
+
+    @font-face {
+        font-family: "CaviarDreams";
+        src: url("./caviar_dreams/CaviarDreams.ttf");
+        src: url("./caviar_dreams/CaviarDreams_Bold.ttf");
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        font-family: "CaviarDreams";
+    }
+
+    p {
+        color: #acb8bb !important;
+        font-size: 16px;
+        line-height: 1.625;
+    }
+
+    h2 {
+        color: #fff;
+        font-size: 60px;
+        font-weight: 700;
+        line-height: 1.167;
+        text-transform: uppercase;
+        padding: 5px 0px 15px;
+    }
+
+    body {
+        background-color: #090d0e;
+    }
+
+    .custom-black {
+        background-color: #06090a;
+    }
+
+    .fa-bars {
+        color: #c9ab81;
+    }
+
+    .fa-bars:focus {
+        outline: none !important;
+        box-shadow: none !important;
+    }
+
+    .theme-padding {
+        padding-top: 120px !important;
+        padding-bottom: 120px !important;
+    }
+
+    .background-image {
+        background-image: url("./images/carousel-bg.jpg");
+        background-repeat: no-repeat;
+        /* height: 100vh; */
+        width: 100%;
+    }
+
+    .background-image>div {
+        height: 96vh;
+        width: 100%;
+    }
+
+    .dancing-script-font {
+        color: #c9ab81 !important;
+        text-transform: capitalize !important;
+        font-family: 'Miniver', cursive !important;
+    }
+
+    .caviar-dreams {
+        color: #fff;
+        font-size: 60px;
+        font-weight: 700;
+        line-height: 1.139;
+        padding: 10px 0px 30px;
+        text-transform: uppercase;
+        font-family: CaviarDreams;
+    }
+
+    .theme-button {
+        color: white;
+        height: 60px;
+        width: 210px;
+        line-height: 55px;
+        letter-spacing: 2px;
+        font-family: "Caviar-Dreams";
+        border: 2px solid #c9ab81;
+        background-color: #c9ab81;
+        transition: 0.4s all ease-in-out;
+        font-family: CaviarDreams;
+    }
+
+    @media screen and (max-width: 991px) {
+        .theme-button {
+            width: 140px;
+            height: 45px;
+            line-height: 40px;
+            letter-spacing: 1px;
+            font-size: 12px;
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+        .caviar-dreams {
+            font-size: 40px;
+        }
+
+        .navbar {
+            background-color: #020303;
+        }
+    }
+
+    .theme-button:hover {
+        background-color: transparent;
+    }
+
+    .active {
+        color: #c9ab81 !important;
+    }
+
+    .nav-item {
+        font-family: CaviarDreams;
+    }
+
+    .navbar-toggler-icon {
+        background-image: url("data:image/svg+xml;..");
+    }
+
+    #button {
+        display: inline-block;
+        background-color: #c9ab81;
+        width: 50px;
+        height: 50px;
+        text-align: center;
+        border-radius: 4px;
+        position: fixed;
+        bottom: 30px;
+        right: 30px;
+        transition: background-color .3s,
+            opacity .5s, visibility .5s;
+        opacity: 0;
+        visibility: hidden;
+        z-index: 1000;
+    }
+
+    #button::after {
+        content: "\f077";
+        font-family: FontAwesome;
+        font-weight: normal;
+        font-style: normal;
+        font-size: 2em;
+        line-height: 50px;
+        color: #fff;
+    }
+
+    #button:hover {
+        cursor: pointer;
+        background-color: #333;
+    }
+
+    #button:active {
+        background-color: #555;
+    }
+
+    #button.show {
+        opacity: 1;
+        visibility: visible;
+    }
+    .theme-svg {
+        height: 60px;
+        fill: #c9ab81;
+    }
+
+    .menu-count {
+        color: #c9ab81;
+        padding: 5px 8px;
+    }
+
+    .theme-cards {
+        top: -80px;
+    }
+
+    .theme-about-us {
+        width: 100%;
+    }
+
+    .theme-card-bg {
+        display: flex;
+        width: 100% !important;
+        height: 20vh;
+        justify-content: center;
+        background-color: #090d0e;
+
+    }
+
+    .menu-card-top {
+        border-bottom: 1px dotted #212529;
+    }
+
+    .menu-card-inner {
+        border-bottom: 1px solid #212529;
+    }
+
+    .theme-bg {
+        background-image: linear-gradient(45deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("./images/v-bg.jpg");
+        background-repeat: no-repeat;
+        height: 84vh;
+        width: 100%;
+    }
+
+    .theme-card-end {
+        background-color: #06090a;
+        padding: 80px;
+    }
+
+    .span-text>span {
+        color: #979797 !important;
+    }
+
+    .card-three {
+        background-color: #c9ab81;
+        padding: 80px;
+        color: white;
+    }
+
+    .cards-para {
+        color: #7e888a;
+        font-size: 14px;
+    }
+
+    .theme-appoint {
+        padding: 60px 55px;
+        background-color: #0d1213;
+    }
+
+    .theme-svg-appoint {
+        height: 80px;
+        fill: #c9ab81;
+    }
+
+    .theme-padding-appoint {
+        padding-bottom: 120px !important;
+    }
+
+    footer {
+        background-color: #050708;
+    }
+
+    .foot-logo {
+        padding: 120px 0px 55px;
+        border-bottom: 1px solid #0e1315;
+    }
+
+    .foot-anchor-color,
+    .foot-blog-heading {
+        color: #99a6ad;
+    }
+
+    .foot-blog-para {
+        color: #c9ab81 !important;
+    }
+
+    .foot-copy {
+        background-color: #020303;
+    }

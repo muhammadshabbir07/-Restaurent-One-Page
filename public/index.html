@@ -7,102 +7,57 @@
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
 </head>
 
-<style>
-    @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600;700&display=swap');
 
-    body {
-        background-color: #090d0e;
-        font-family: "Caviar-Dreams";
-    }
-
-    .background-image {
-        background-image: url("./images/carousel-bg.jpg");
-        height: 100vh;
-        width: 100%;
-    }
-
-    .background-image>div {
-        height: 100vh;
-        width: 100%;
-    }
-
-    .dancing-script-font {
-        color: #c9ab81 !important;
-        font-family: 'Dancing Script', cursive;
-    }
-
-    .caviar-dreams {
-        font-size: 60px;
-        font-weight: 700;
-        line-height: 1.167;
-        text-transform: uppercase;
-    }
-
-    .theme-button {
-        color: white;
-        height: 60px;
-        width: 210px;
-        line-height: 55px;
-        letter-spacing: 2px;
-        font-family: "Caviar-Dreams";
-        border: 2px solid #c9ab81;
-        background-color: #c9ab81;
-        transition: 0.4s all ease-in-out;
-    }
-
-    .theme-button:hover {
-        background-color: transparent;
-    }
-
-    .active {
-        color: #c9ab81 !important;
-    }
-</style>
 
 <body>
 
 
-    <nav class="navbar sticky-top navbar-expand-lg bg-transparent position-absolute w-100 mt-4">
+    <nav class="navbar position-fixed navbar-light bg-lignt fixed-top navbar-expand-lg w-100 pt-4">
         <div class="container">
             <a class="navbar-brand" href="#">
                 <img src="./images/logo.png" alt="">
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+
+            
+            <button class="navbar-toggler na" type="button" data-bs-toggle="collapse"
                 data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
                 aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                <i class="fas fa-bars"></i>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active text-white px-4" aria-current="page" href="#">Home</a>
+                        <a class="nav-link active text-white px-4" aria-current="page" href="#">HOME</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white px-4" href="#">ABOUT</a>
+                        <a class="nav-link text-white px-4" href="#about-us">ABOUT</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white px-4" href="#">FEATURE</a>
+                        <a class="nav-link text-white px-4" href="#feature">FEATURE</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white px-4" href="#">MENU</a>
+                        <a class="nav-link text-white px-4" href="#menu">MENU</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white px-4" href="#">INTRO</a>
+                        <a class="nav-link text-white px-4" href="#intro">INTRO</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link text-white px-4" href="#">CONTACT</a>
+                        <a class="nav-link text-white px-4" href="#contact">CONTACT</a>
                     </li>
                 </ul>
+
+                <button class="theme-button ms-5"> <i class="fas fa-calendar-alt"></i> Book Table</button>
             </div>
 
-            <button class="theme-button ms-5"> <i class="fas fa-calendar-alt"></i> Book Table</button>
+           
         </div>
     </nav>
 
     <div class="background-image">
-        <div class="container d-flex justify-content-center flex-column">
+        <div class="container theme-padding d-flex justify-content-center flex-column">
             <h6 class="text-white text-uppercase dancing-script-font">Welcome To Our Restaurent</h6>
             <h1 class="text-white text-uppercase caviar-dreams">The Food <br> Heaven</h1>
             <div>
@@ -112,69 +67,10 @@
         </div>
     </div>
 
-    <style>
-        .theme-svg {
-            height: 60px;
-            fill: #c9ab81;
-        }
 
-        .menu-count {
-            color: #c9ab81;
-            padding: 5px 8px;
-        }
 
-        .theme-cards {
-            margin-top: -50px;
-        }
-
-        .theme-about-us {
-            background-color: #090d0e;
-            height: 100vh;
-            width: 100%;
-        }
-
-        .theme-card-bg {
-            display: flex;
-            width: 100% !important;
-            height: 20vh;
-            justify-content: center;
-            background-color: #090d0e;
-
-        }
-
-        .menu-card-top {
-            border-bottom: 1px dotted #212529;
-        }
-
-        .menu-card-inner {
-            border-bottom: 1px solid #212529;
-        }
-
-        .theme-bg {
-            background-image: linear-gradient(45deg, rgba(0, 0, 0, .5), rgba(0, 0, 0, .5)), url("./images/v-bg.jpg");
-            background-repeat: no-repeat;
-            height: 100vh;
-            width: 100%;
-        }
-
-        .theme-card-end {
-            background-color: #06090a;
-            padding: 80px;
-        }
-
-        .span-text>span {
-            color: #979797 !important;
-        }
-
-        .card-three {
-            background-color: #c9ab81;
-            padding: 80px;
-            color: white;
-        }
-    </style>
-
-    <div class="container-fluid position-relative theme-card-bg">
-        <div class="container theme-cards position-absolute">
+    <div class="container position-relative theme-card-bg">
+        <div class="theme-cards position-relative">
             <div class="row">
                 <div class="col-md-4">
                     <div class="bg-dark d-flex p-4">
@@ -192,8 +88,8 @@
                             </svg>
                         </div>
                         <div class="ps-3">
-                            <h5 class="text-white">BEST FOOD QUALITY</h5>
-                            <p class="text-white">They still serve tasty tehari with shorisha (mustard) oil.</p>
+                            <h6 class="text-white">BEST FOOD QUALITY</h6>
+                            <p class="cards-para">They still serve tasty tehari with shorisha (mustard) oil.</p>
                         </div>
                     </div>
                 </div>
@@ -213,8 +109,8 @@
                             </svg>
                         </div>
                         <div class="ps-3">
-                            <h5 class="text-white">BEST FOOD QUALITY</h5>
-                            <p class="text-white">They still serve tasty tehari with shorisha (mustard) oil.</p>
+                            <h6 class="text-white">BEST FOOD QUALITY</h6>
+                            <p class="cards-para">They still serve tasty tehari with shorisha (mustard) oil.</p>
                         </div>
                     </div>
                 </div>
@@ -234,8 +130,8 @@
                             </svg>
                         </div>
                         <div class="ps-3">
-                            <h5 class="text-white">BEST FOOD QUALITY</h5>
-                            <p class="text-white">They still serve tasty tehari with shorisha (mustard) oil.</p>
+                            <h6 class="text-white">BEST FOOD QUALITY</h6>
+                            <p class="cards-para">They still serve tasty tehari with shorisha (mustard) oil.</p>
                         </div>
                     </div>
                 </div>
@@ -243,69 +139,70 @@
         </div>
     </div>
 
-    <div class="container-fluid theme-about-us">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="row">
-                        <div class="col-md-6 p-0 w-auto">
-                            <img src="./images/abt1.jpg" alt="">
-                        </div>
-                        <div class="col-md-6 p-0 w-auto">
-                            <img class="mt-5 ms-5" src="./images/abt3.jpg" alt="">
-                        </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-md-6 p-0 w-auto">
-                            <img src="./images/abt2.jpg" alt="">
-                        </div>
-                        <div class="col-md-6 p-0 w-auto">
-                            <img class="mt-5 ms-5" src="./images/abt4.jpg" alt="">
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-6 d-flex flex-column justify-content-evenly">
-                    <div>
-                        <h6 class="text-white text-uppercase dancing-script-font">About Us</h6>
-                        <h1 class="text-white text-uppercase caviar-dreams">SPECIALIZED IN <br> SPICY MODERN</h1>
-                        <p class="text-white">In Western countries, most mid-to high-range restaurants serve alcoholic
-                            beverages such
-                            as beer and wine. Some restaurants serve all the major meals, such as breakfast, lunch,
-                            and dinner (e.g., major fast food chains, diners, hotel restaurants, and airport
-                            restaurants).</p>
-                    </div>
-                    <button class="theme-button ms-0 text-uppercase">Check Menus</button>
-
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="container">
+    <div id="about-us" class="container theme-padding theme-about-us">
         <div class="row">
-            <div class="col-md-3">
-                <img src="./images/abt5.jpg" alt="">
+            <div class="col-md-6">
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-6 p-0 w-auto">
+                        <img src="./images/abt1.jpg" alt="">
+                    </div>
+                    <div class="col-md-6 p-0 w-auto">
+                        <img class="mt-4 ms-4" src="./images/abt3.jpg" alt="">
+                    </div>
+                </div>
+                <div class="row d-flex justify-content-center">
+                    <div class="col-md-6 p-0 w-auto">
+                        <img src="./images/abt2.jpg" alt="">
+                    </div>
+                    <div class="col-md-6 p-0 w-auto">
+                        <img class="mt-4 ms-4" src="./images/abt4.jpg" alt="">
+                    </div>
+                </div>
             </div>
-            <div class="col-md-6 d-flex flex-column justify-content-evenly align-items-center px-5">
-                <div class="px-5">
-                    <h6 class="text-white text-uppercase text-center dancing-script-font">About Us</h6>
-                    <h1 class="text-white text-uppercase text-center caviar-dreams">OUR BEST <br> SPECIALTIES
-                    </h1>
-                    <p class="text-white text-center">In Western countries, most mid-to high-range restaurants serve
-                        alcoholic beverages such as beer and wine. Some restaurants serve all the major meals, such as
-                        breakfast.</p>
+            <div class="col-md-6 d-flex flex-column justify-content-evenly">
+                <div>
+                    <h6 class="text-white text-uppercase dancing-script-font">About Us</h6>
+                    <h1 class="text-white text-uppercase caviar-dreams">SPECIALIZED IN <br> SPICY MODERN</h1>
+                    <p>In Western countries, most mid-to high-range restaurants serve alcoholic
+                        beverages such
+                        as beer and wine. Some restaurants serve all the major meals, such as breakfast, lunch,
+                        and dinner (e.g., major fast food chains, diners, hotel restaurants, and airport
+                        restaurants).</p>
                 </div>
                 <button class="theme-button ms-0 text-uppercase">Check Menus</button>
 
             </div>
-            <div class="col-md-3">
-                <img src="./images/abt5.jpg" alt="">
+        </div>
+    </div>
+
+    <div id="feature" class="custom-black container-fluid">
+        <div class="container theme-padding">
+            <div class="row">
+                <div class="col-md-3 d-flex justify-content-center">
+                    <img src="./images/abt5.jpg" alt="">
+                </div>
+                <div class="col-md-6 d-flex flex-column justify-content-evenly align-items-center p-5">
+                    <div class="px-5">
+                        <h6 class="text-white text-uppercase text-center dancing-script-font">About Us</h6>
+                        <h1 class="text-white text-uppercase text-center caviar-dreams">OUR BEST <br> SPECIALTIES
+                        </h1>
+                        <p class="text-white text-center">In Western countries, most mid-to high-range restaurants serve
+                            alcoholic beverages such as beer and wine. Some restaurants serve all the major meals, such
+                            as
+                            breakfast.</p>
+                    </div>
+                    <button class="theme-button ms-0 text-uppercase">Check Menus</button>
+
+                </div>
+                <div class="col-md-3 d-flex justify-content-center">
+                    <img src="./images/abt5.jpg" alt="">
+                </div>
             </div>
         </div>
     </div>
 
 
-    <div class="container py-5">
+    <div id="menu" class="container theme-padding py-5">
         <div class="row">
             <div class="col-md-12">
                 <h6 class="text-white text-uppercase dancing-script-font">Our Menus</h6>
@@ -433,14 +330,14 @@
         </div>
     </div>
 
-    <div class="container-fluid">
+    <div id="intro" class="container-fluid">
         <div class="theme-bg d-flex justify-content-center align-items-center">
             <img src="./images/v-play.png" alt="">
         </div>
     </div>
 
 
-    <div class="container">
+    <div id="contact" class="container theme-padding">
         <div class="row align-items-center">
             <div class="col-md-4">
                 <div class="theme-card-end d-flex justify-content-center align-items-center flex-column">
@@ -461,10 +358,12 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <img src="./images/lo1.jpg" alt="">
+                <div class="w-100 d-flex justify-content-center">
+                    <img src="./images/lo1.jpg" alt="">
+                </div>
             </div>
 
-            
+
 
             <div class="col-md-4">
                 <div class="card-three">
@@ -472,56 +371,154 @@
                         <h3 class="text-center">OPENING TIME</h3>
                     </div>
                     <div class="d-flex justify-content-between">
-                        <p>MON</p>
-                        <p>17:00 to 23:00</p>
+                        <p class=" text-white">MON</p>
+                        <p class=" text-white">17:00 to 23:00</p>
                     </div>
                     <div class="d-flex justify-content-between">
-                        <p>MON</p>
-                        <p>17:00 to 23:00</p>
+                        <p class=" text-white">MON</p>
+                        <p class=" text-white">17:00 to 23:00</p>
                     </div>
                     <div class="d-flex justify-content-between">
-                        <p>MON</p>
-                        <p>17:00 to 23:00</p>
+                        <p class=" text-white">MON</p>
+                        <p class=" text-white">17:00 to 23:00</p>
                     </div>
                     <div class="d-flex justify-content-between">
-                        <p>MON</p>
-                        <p>17:00 to 23:00</p>
+                        <p class=" text-white">MON</p>
+                        <p class=" text-white">17:00 to 23:00</p>
                     </div>
                 </div>
             </div>
         </div>
     </div>
 
-    <style>
-        .theme-appoint {
-            padding: 60px 55px;
-    background-color: #0d1213;
-        }
-    </style>
 
-    <div class="container">
+
+    <div class="container theme-padding-appoint">
         <div class="row">
             <div class="col-md-12 theme-appoint">
-                <div class=" d-flex">
-                <svg class="theme-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
-                    <path d="M374.6 492h-0.1c-5.5 0-10 4.5-10 10 0 5.5 4.5 10 10 10h0.1c5.5 0 10-4.5 10-10C384.6 496.5 380.2 492 374.6 492z"></path>
-                    <path d="M509 168.9L438 98.3V40c0-22.1-17.9-40-40-40H114C91.9 0 74 17.9 74 40v57.8l-71.1 71.1C1.1 170.8 0 173.3 0 176V432.5C0 476.3 35.7 512 79.5 512h250.4c5.5 0 10-4.5 10-10 0-5.5-4.5-10-10-10H79.5c-11.7 0-22.6-3.4-31.8-9.3l18.7-18.7h153.6c5.5 0 10-4.5 10-10 0-5.5-4.5-10-10-10H86.4l119.3-119.3c27.7-27.7 72.9-27.7 100.6 0l158 158C455.1 488.6 444.2 492 432.5 492H419c-5.5 0-10 4.5-10 10 0 5.5 4.5 10 10 10h13.5c20.4 0 39-7.7 53-20.3 0.3-0.3 0.7-0.5 1-0.9 0.1-0.1 0.2-0.3 0.4-0.4C502.3 475.9 512 455.3 512 432.5V176C512 173.3 510.9 170.7 509 168.9zM438 126.5l49.8 49.5L438 225.8V126.5zM74 126.1v99.7l-49.9-49.9L74 126.1zM32.8 469.3C24.8 459.2 20 446.4 20 432.5V200.1l141 141L32.8 469.3zM320.4 310.6c-35.5-35.5-93.4-35.5-128.9 0l-16.4 16.4L94 245.8V40c0-11 9-20 20-20h284c11 0 20 9 20 20v205.8l-81.1 81.1L320.4 310.6zM492 432.5c0 13.9-4.8 26.7-12.8 36.8L351 341.1l141-141V432.5z"></path>
-                    <path d="M262 92H161.5c-5.5 0-10 4.5-10 10 0 5.5 4.5 10 10 10H262c5.5 0 10-4.5 10-10C272 96.5 267.5 92 262 92z"></path>
-                    <path d="M315.4 94.9c-1.9-1.9-4.4-2.9-7.1-2.9 -2.6 0-5.2 1.1-7.1 2.9 -1.9 1.9-2.9 4.4-2.9 7.1s1.1 5.2 2.9 7.1c1.9 1.9 4.4 2.9 7.1 2.9s5.2-1.1 7.1-2.9c1.9-1.9 2.9-4.4 2.9-7.1S317.3 96.8 315.4 94.9z"></path>
-                    <path d="M350.5 164H161.5c-5.5 0-10 4.5-10 10 0 5.5 4.5 10 10 10H350.5c5.5 0 10-4.5 10-10C360.5 168.5 356 164 350.5 164z"></path>
-                    <path d="M350.5 236H161.5c-5.5 0-10 4.5-10 10 0 5.5 4.5 10 10 10H350.5c5.5 0 10-4.5 10-10C360.5 240.5 356 236 350.5 236z"></path>
-                  </svg>
-                  <div class="ms-5">
-                    <h6 class="text-white text-uppercase dancing-script-font">Appointment</h6>
-                    <h1 class="text-white text-uppercase caviar-dreams">MAKE APPOINTMENT! <span style="color: #c9ab81;">+12123456789</span> </h1>
-                  </div>
+                <div class=" d-flex ">
+                    <svg class="theme-svg-appoint" height="80" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+                        <path
+                            d="M374.6 492h-0.1c-5.5 0-10 4.5-10 10 0 5.5 4.5 10 10 10h0.1c5.5 0 10-4.5 10-10C384.6 496.5 380.2 492 374.6 492z">
+                        </path>
+                        <path
+                            d="M509 168.9L438 98.3V40c0-22.1-17.9-40-40-40H114C91.9 0 74 17.9 74 40v57.8l-71.1 71.1C1.1 170.8 0 173.3 0 176V432.5C0 476.3 35.7 512 79.5 512h250.4c5.5 0 10-4.5 10-10 0-5.5-4.5-10-10-10H79.5c-11.7 0-22.6-3.4-31.8-9.3l18.7-18.7h153.6c5.5 0 10-4.5 10-10 0-5.5-4.5-10-10-10H86.4l119.3-119.3c27.7-27.7 72.9-27.7 100.6 0l158 158C455.1 488.6 444.2 492 432.5 492H419c-5.5 0-10 4.5-10 10 0 5.5 4.5 10 10 10h13.5c20.4 0 39-7.7 53-20.3 0.3-0.3 0.7-0.5 1-0.9 0.1-0.1 0.2-0.3 0.4-0.4C502.3 475.9 512 455.3 512 432.5V176C512 173.3 510.9 170.7 509 168.9zM438 126.5l49.8 49.5L438 225.8V126.5zM74 126.1v99.7l-49.9-49.9L74 126.1zM32.8 469.3C24.8 459.2 20 446.4 20 432.5V200.1l141 141L32.8 469.3zM320.4 310.6c-35.5-35.5-93.4-35.5-128.9 0l-16.4 16.4L94 245.8V40c0-11 9-20 20-20h284c11 0 20 9 20 20v205.8l-81.1 81.1L320.4 310.6zM492 432.5c0 13.9-4.8 26.7-12.8 36.8L351 341.1l141-141V432.5z">
+                        </path>
+                        <path
+                            d="M262 92H161.5c-5.5 0-10 4.5-10 10 0 5.5 4.5 10 10 10H262c5.5 0 10-4.5 10-10C272 96.5 267.5 92 262 92z">
+                        </path>
+                        <path
+                            d="M315.4 94.9c-1.9-1.9-4.4-2.9-7.1-2.9 -2.6 0-5.2 1.1-7.1 2.9 -1.9 1.9-2.9 4.4-2.9 7.1s1.1 5.2 2.9 7.1c1.9 1.9 4.4 2.9 7.1 2.9s5.2-1.1 7.1-2.9c1.9-1.9 2.9-4.4 2.9-7.1S317.3 96.8 315.4 94.9z">
+                        </path>
+                        <path
+                            d="M350.5 164H161.5c-5.5 0-10 4.5-10 10 0 5.5 4.5 10 10 10H350.5c5.5 0 10-4.5 10-10C360.5 168.5 356 164 350.5 164z">
+                        </path>
+                        <path
+                            d="M350.5 236H161.5c-5.5 0-10 4.5-10 10 0 5.5 4.5 10 10 10H350.5c5.5 0 10-4.5 10-10C360.5 240.5 356 236 350.5 236z">
+                        </path>
+                    </svg>
+
+                    <style>
+                        .apoint-tittle {
+                            line-height: 1.167;
+                            font-size: 26px;
+                        }
+                    </style>
+
+                    <div class="ms-5">
+                        <h6 class="text-white text-uppercase dancing-script-font">Appointment</h6>
+                        <h2 class="text-white text-uppercase apoint-tittle">MAKE APPOINTMENT! <span
+                                style="color: #c9ab81;">+12123456789</span> </h2>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
 
-    
 
+
+    <footer>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 foot-logo text-center">
+                    <img src="./images/logo.png" alt="">
+                </div>
+            </div>
+            <div class="row my-5">
+                <div class="col-md-4 d-flex">
+                    <div>
+                        <p class=" text-end pb-3">
+                            Food from restaurants or groceries <br> from top shops across Bangladesh <br> Curated
+                            selection of dishes and <br> household need
+                        </p>
+                        <h5 class=" text-white text-end pb-2">SOCIAL CONNECT</h5>
+
+                        <div class=" text-end">
+                            <a class=" text-decoration-none" href="">
+                                <i style="padding: 16px 18px;" class=" text-white me-1 bg-danger fab fa-facebook-f"></i>
+                            </a>
+                            <a class=" text-decoration-none" href="">
+                                <i class=" text-white p-3 me-1 bg-danger fab fa-twitter"></i>
+                            </a>
+                            <a class=" text-decoration-none" href="">
+                                <i class=" text-white p-3 bg-danger fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div>
+                        <ul class="ps-4">
+                            <li class=" list-unstyled py-2"><a class="foot-anchor-color text-decoration-none"
+                                    href="">HOME</a></li>
+                            <li class=" list-unstyled py-2"><a class="foot-anchor-color text-decoration-none"
+                                    href="">MENU</a></li>
+                            <li class=" list-unstyled py-2"><a class="foot-anchor-color text-decoration-none"
+                                    href="">RESERVATION</a></li>
+                            <li class=" list-unstyled py-2"><a class="foot-anchor-color text-decoration-none"
+                                    href="">SHOP</a></li>
+                            <li class=" list-unstyled py-2"><a class="foot-anchor-color text-decoration-none"
+                                    href="">NEWS</a></li>
+                            <li class=" list-unstyled py-2"><a class="foot-anchor-color text-decoration-none"
+                                    href="">CONTACT</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184552.30943582457!2d-79.37805805!3d43.7182412!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C%20ON%2C%20Canada!5e0!3m2!1sen!2s!4v1660505377633!5m2!1sen!2s"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade" class="px-2"></iframe>
+                </div>
+                <div class="col-md-4 d-flex justify-content-between flex-column">
+
+                    <div>
+                        <h3 class=" text-white">BLOG INSIGHTS</h3>
+                    </div>
+                    <div>
+                        <h6 class="foot-blog-heading">OUR TEAM IS EXPERIENCED IN PROJECT ESTIMATING, MANAGEMENT</h6>
+                        <p class="foot-blog-para">DECEMBER 21, 2021</p>
+                    </div>
+                    <div>
+                        <h6 class="foot-blog-heading">OUR TEAM IS EXPERIENCED IN PROJECT ESTIMATING, MANAGEMENT</h6>
+                        <p class="foot-blog-para">DECEMBER 21, 2021</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid foot-copy">
+            <div class="row">
+                <h6 class="mb-0 text-white text-center py-4">COPYRIGHT BY @THEMEXRIVER - 2022</h6>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Back to top button -->
+    <a class=" text-decoration-none" id="button"></a>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+        <script src="./script.js"></script>
     <script src="https://kit.fontawesome.com/c35a4020ae.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
